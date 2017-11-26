@@ -1,3 +1,1 @@
-<p>
-  advertisement-cards works!
-</p>
+<advertisement-card *ngFor="let card of (advertisements$ | async)?.data | slice:0:10" [card]="card"></advertisement-card>

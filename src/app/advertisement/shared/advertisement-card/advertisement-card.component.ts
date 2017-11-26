@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'advertisement-card',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./advertisement-card.component.scss']
 })
 export class AdvertisementCardComponent implements OnInit {
+
+  @Input() card: any;
 
   constructor() { }
 

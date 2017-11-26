@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+
+import { AdvertisementsService } from '../advertisements.service';
+
 
 @Component({
   selector: 'advertisement-cards',
@@ -7,9 +11,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdvertisementCardsComponent implements OnInit {
 
-  constructor() { }
+  advertisements$: Observable<any>;
+
+  constructor(private advertisements: AdvertisementsService) { }
 
   ngOnInit() {
+    this.advertisements$ = this.advertisements.advertisements$;
   }
 
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 import { HttpService } from '../../core/http.service';
 
@@ -7,8 +8,8 @@ export class AdvertisementsService {
 
   constructor(private http: HttpService) { }
 
-  advertisements() {
-    return this.http.request('GET', '/advertisements');
+  get advertisements$(): Observable<any> {
+    return this.http.get('/advertisements');
   }
 
 }
