@@ -7,6 +7,7 @@ import { MaterialModule } from '../material/material.module';
 import { AdvertisementsComponent } from './advertisements.component';
 import { AdvertisementCardsComponent } from './shared/advertisement-cards/advertisement-cards.component';
 import { AdvertisementCardComponent } from './shared/advertisement-card/advertisement-card.component';
+import { AdvertisementsService } from './shared/advertisements.service';
 
 @NgModule({
   imports: [
@@ -18,6 +19,7 @@ import { AdvertisementCardComponent } from './shared/advertisement-card/advertis
     AdvertisementsComponent,
     AdvertisementCardsComponent,
     AdvertisementCardComponent
-  ]
+  ],
+  providers: [AdvertisementsService]
 })
 export class AdvertisementModule { }
