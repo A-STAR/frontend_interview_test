@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpService } from './http.service';
 
 
 @NgModule({
@@ -8,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     CommonModule,
     BrowserAnimationsModule
   ],
-  exports: [BrowserAnimationsModule]
+  exports: [BrowserAnimationsModule],
+  providers: [HttpService]
 })
 export class CoreModule { }
