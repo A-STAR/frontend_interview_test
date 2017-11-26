@@ -5,7 +5,6 @@
 
 export const environment = {
   production: false,
-  url: 'https://api.mcmakler.de',
-  version: 1,
-  api: `${this.url}/v${this.version}`
+  api: 'https://api.mcmakler.de',
+  version: 1
 };
