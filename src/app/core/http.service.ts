@@ -22,6 +22,10 @@ export class HttpService {
     return this.http.put(`${this.api}${path}`, body, options);
   }
 
+  patch(path: string, body: any | null, options?: Object) {
+    return this.http.patch(`${this.api}${path}`, body, options);
+  }
+
   delete(path: string, options?: Object) {
     return this.http.delete(`${this.api}${path}`, options);
   }
