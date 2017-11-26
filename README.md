@@ -1,3 +1,17 @@
+# Install
+
+```
+npm i @angular/cli -g
+npm i
+```
+
+# Run
+
+```
+npm i http-server -g
+http-server dist -o
+```
+
 # Front-End Interview Test
 
 This is a simple front-end code challenge created to serve two purposes:
