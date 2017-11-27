@@ -7,10 +7,7 @@ npm i
 
 # Run
 
-```
-npm i http-server -g
-http-server dist -o
-```
+`ng serve -aot -pc proxy.conf.json -o`
 
 # Front-End Interview Test
 
