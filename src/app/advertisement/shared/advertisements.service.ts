@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-
-import { HttpService } from '../../core/http.service';
 
 @Injectable()
 export class AdvertisementsService {
 
-  constructor(private http: HttpService) { }
+  constructor(private http: HttpClient) { }
 
   get advertisements$(): Observable<any> {
     return this.http.get('/advertisements');
