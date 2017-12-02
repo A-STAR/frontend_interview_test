@@ -9,7 +9,7 @@ export class ApiInterceptor implements HttpInterceptor {
 
   constructor() { }
 
-  private request(request: HttpRequest<any>) {
+  private request(request: HttpRequest<any>): HttpRequest<any> {
     const api = `${environment.api}/v${environment.version}`;
 
     return request.clone({ url: `${api}${request.url}` });
