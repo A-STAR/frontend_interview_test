@@ -9,9 +9,37 @@ npm i
 
 `ng serve -aot -pc proxy.conf.json -o`
 
-## Result you should see
+## Result You Should See
 
 ![Result](https://raw.githubusercontent.com/A-STAR/frontend_interview_test/master/assets/result.png)
+
+# My Notes
+
+## Part A: HTML + CSS
+
+I used SCSS and make use of `$spacer` variable. It was helpful to be able to make computations based on one value that changes everywhere.
+
+Usually I use heavily Sass extends and mixins. This way I can change style of app globally with ease.
+
+## PART B: Javascript
+
+My choice was Angular 5 & Angular Material.
+
+I'm proficient in Angular and seems you asked Material. Google created Material for Android. They created Angular and Material for Angular. So I chose that.
+
+I tried to keep the code as clean as possible using componential approach and best reactive programming practice.
+
+Logic of getting data is in separate service. Components have only what they should have for their templates.
+
+There're presentational component for a single card and it's repeated in smart advertisement cards component.
+
+All's written using TSLint.
+
+### About CORS Issue
+
+Back-end doesn't have `Allow-Control-Allow-Origin: *` so I created `proxy.conf.json` to access API running project locally.
+
+However to run this in production on server you have to ask back-end developers to add CORS header from above. I think you already know this.
 
 # Front-End Interview Test
 
