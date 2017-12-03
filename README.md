@@ -9,6 +9,10 @@ npm i
 
 `ng serve -aot -pc proxy.conf.json -o`
 
+## Result you should see
+
+![Result](https://raw.githubusercontent.com/A-STAR/frontend_interview_test/master/assets/result.png)
+
 # Front-End Interview Test
 
 This is a simple front-end code challenge created to serve two purposes:
