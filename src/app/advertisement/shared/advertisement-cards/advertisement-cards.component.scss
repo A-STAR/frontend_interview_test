@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+
+  &::before,
+  advertisement-card,
+  &::after {
+    flex: 0 0 400px;
+  }
+
+  &::before,
+  &::after {
+    order: 1;
+    content: "";
+    height: 0;
+    padding: 0 1.5rem;
+  }
+
+}

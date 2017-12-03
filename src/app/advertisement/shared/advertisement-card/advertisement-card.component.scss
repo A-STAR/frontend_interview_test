@@ -1,0 +1,116 @@
+:host {
+  $spacer: 40px;
+
+  display: flex;
+  flex-flow: column;
+  padding: $spacer * .5;
+
+  mat-card {
+    display: flex;
+    flex-flow: column;
+    height: calc((400px - #{$spacer}) / 3 * 2 * 2);
+    padding: $spacer;
+    padding-bottom: $spacer;
+
+    figure {
+      position: relative;
+      display: flex;
+      width: calc(100% + #{$spacer} * 2);
+      margin: - $spacer;
+      margin-bottom: 0;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      caption {
+        position: absolute;
+        top: $spacer * .5;
+        left: $spacer * .5;
+        font-size: 0;
+
+        span {
+          padding: 8px 10px 7px;
+          background-color: #ffffff;
+          color: rgba(0, 0, 0, .3);
+          border-radius: 2px;
+          box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2),
+                      0 2px 2px 0 rgba(0, 0, 0, .14),
+                      0 1px 5px 0 rgba(0, 0, 0, .12);
+          font-size: .875rem;
+          font-weight: 700;
+
+          & + span {
+            margin-left: 10px;
+          }
+
+        }
+
+      }
+
+    }
+
+    figure,
+    div {
+      flex: 50%;
+    }
+
+    div {
+      display: flex;
+      flex-flow: column;
+      margin-bottom: - $spacer;
+      padding-top: $spacer;
+      padding-bottom: $spacer;
+
+      & > :last-child {
+        margin-bottom: 0;
+      }
+
+      mat-card-title-group {
+        flex: 1;
+        margin: 0;
+
+        mat-card-title {
+          color: rgba(0, 0, 0, .75);
+          font-size: 1rem;
+          font-weight: 700;
+        }
+
+        mat-card-subtitle {
+          color: rgba(0, 0, 0, .3);
+          font-weight: 700;
+        }
+
+      }
+
+      mat-card-actions {
+        display: flex;
+        align-items: baseline;
+        margin-left: 0;
+        margin-right: 0;
+
+        strong {
+          flex: 1;
+        }
+
+        span {
+          padding-right: .85rem;
+          color: rgba(0, 0, 0, .6);
+
+          &:last-child {
+            padding-left: .85rem;
+            padding-right: 0;
+            border-left: 1px solid rgba(0, 0, 0, .2);
+            text-align: right;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

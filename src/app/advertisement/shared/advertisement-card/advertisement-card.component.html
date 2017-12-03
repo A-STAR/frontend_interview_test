@@ -1,3 +1,20 @@
-<p>
-  advertisement-card works!
-</p>
+<mat-card>
+  <figure>
+    <img [src]="image" [alt]="title">
+    <caption>
+      <span *ngIf="mieten">Mieten</span>
+      <span *ngIf="kaufen">Kaufen</span>
+    </caption>
+  </figure>
+  <div>
+    <mat-card-title-group>
+      <mat-card-title>{{ title | slice:0:70 }}</mat-card-title>
+      <mat-card-subtitle>{{ zip }} {{ city }} / {{ street }}</mat-card-subtitle>
+    </mat-card-title-group>
+    <mat-card-actions>
+      <strong>{{ price | number:'1.0-0' }} &euro;</strong>
+      <span>{{ rooms }} Zimmer</span>
+      <span>ab {{ space | number:'1.0-0' }} m<sup>2</sup></span>
+    </mat-card-actions>
+  </div>
+</mat-card>
